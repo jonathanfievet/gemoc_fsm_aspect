@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated FSMLanguageMT -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="org.company.fsm.xdsml.fsmlanguagemt.gemoc.presentation.GemocModelWizardID"
+            name="%_UI_GemocModelWizard_label"
+            class="org.company.fsm.xdsml.fsmlanguagemt.gemoc.presentation.GemocModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/GemocModelFile.gif">
+         <description>%_UI_GemocModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated FSMLanguageMT -->
+      <editor
+            id="org.company.fsm.xdsml.fsmlanguagemt.gemoc.presentation.GemocEditorID"
+            name="%_UI_GemocEditor_label"
+            icon="icons/full/obj16/GemocModelFile.gif"
+            extensions="gemoc"
+            class="org.company.fsm.xdsml.fsmlanguagemt.gemoc.presentation.GemocEditor"
+            contributorClass="org.company.fsm.xdsml.fsmlanguagemt.gemoc.presentation.GemocActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

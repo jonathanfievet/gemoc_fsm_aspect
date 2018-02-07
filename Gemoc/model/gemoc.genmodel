@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Gemoc/src-gen" creationIcons="false" editDirectory="/Gemoc.edit/src-gen"
+    editorDirectory="/Gemoc.editor/src-gen" modelPluginID="Gemoc" modelName="Gemoc"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    testsDirectory="" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>gemoc.ecore</foreignModel>
+  <genPackages prefix="Gemoc" disposableProviderFactory="true" ecorePackage="gemoc.ecore#/">
+    <genClasses ecoreClass="gemoc.ecore#//FSM">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gemoc.ecore#//FSM/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference gemoc.ecore#//FSM/state"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference gemoc.ecore#//FSM/transition"/>
+      <genOperations ecoreOperation="gemoc.ecore#//FSM/print"/>
+    </genClasses>
+    <genClasses ecoreClass="gemoc.ecore#//State">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gemoc.ecore#//State/name"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gemoc.ecore#//State/incoming"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gemoc.ecore#//State/outcoming"/>
+    </genClasses>
+    <genClasses ecoreClass="gemoc.ecore#//Transition">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gemoc.ecore#//Transition/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute gemoc.ecore#//Transition/trigger"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gemoc.ecore#//Transition/state"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference gemoc.ecore#//Transition/src"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.sequential.xdsml">
+    <XDSML_Definition modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" name="org.company.fsm.xdsml.FSMLanguage" xdsmlFilePath="/org.company.FSM.xdsml/bin/org/company/fsm/xdsml/FSMLanguage.melange" />
+  </extension>
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated FSMLanguageMT -->
+      <package
+            uri="http://org.company.fsm.xdsml.fsmlanguagemt/gemoc/"
+            class="org.company.fsm.xdsml.fsmlanguagemt.gemoc.GemocPackage"
+            genModel="model-gen/FSMLanguageMT.genmodel"/>
+   </extension>
+</plugin>
